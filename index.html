@@ -9,22 +9,25 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background: linear-gradient(180deg, #fffbe7 0%, #ffe066 100%);
+            background: linear-gradient(180deg, #fffbe7 0%, #f5e5a6ff 70%);
         }
         #alejandra {
             position: absolute;
-            top: 25%;
             width: 100%;
             text-align: center;
-            font-family: 'Brush Script MT', sans-serif;
+            font-family: 'Dancing Script', 'Brush Script MT', cursive, sans-serif;
             font-size: 3vw;
             color: #f7b731;
-            text-shadow: 2px 2px 8px #fff9c4, 0 0 10px #f9ca24;
-            letter-spacing: 0.2em;
+            text-shadow: 2px 2px 12px #fff9c4, 0 0 16px #f9ca24;
+            letter-spacing: 0.18em;
             z-index: 2;
             user-select: none;
             pointer-events: none;
+            font-weight: 700;
         }
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        
+
         canvas {
             display: block;
             width: 100vw;
@@ -33,11 +36,18 @@
     </style>
 </head>
 <body>
-    <div id="alejandra">Alejandra Elizabeth</div>
-    <div id="alejandra" style="top: 35%;">Te quiero mucho mi niña</div>
-    <div id="alejandra" style="top: 45%;">Fly, fly, volo ¿Oyo?</div>
-    <canvas id="flores"></canvas>
-    <script>
+        <div id="alejandra" style="top: 23%;">Alejandra Elizabeth</div>
+        <div id="alejandra" style="top: 33%;font-size:2.5vw;">Te quiero mucho mi niña</div>
+        <div id="alejandra" style="top: 43%;font-size:2.2vw;">Fly, fly, volo ¿Oyo?</div>
+            <canvas id="flores"></canvas>
+        <script>
+                // Cargar fuente de Google Fonts para Dancing Script
+                (function() {
+                    var link = document.createElement('link');
+                    link.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap';
+                    link.rel = 'stylesheet';
+                    document.head.appendChild(link);
+                })();
         const canvas = document.getElementById('flores');
         const ctx = canvas.getContext('2d');
         let width = window.innerWidth;
