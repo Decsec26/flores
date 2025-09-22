@@ -160,7 +160,7 @@
             ctx.clearRect(0, 0, width, height);
 
             // Agregar flores poco a poco
-            if (flowers.length < 40 && time - lastAdd > 400 + Math.random() * 400) {
+            if (flowers.length < 80 && time - lastAdd > 400 + Math.random() * 400) {
                 flowers.push(new Flower());
                 lastAdd = time;
             }
