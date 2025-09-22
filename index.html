@@ -25,6 +25,19 @@
             pointer-events: none;
             font-weight: 700;
         }
+
+        /* Más grande en móviles */
+        @media (max-width: 600px) {
+            #alejandra {
+                font-size: 7vw !important;
+            }
+            #alejandra[style*="font-size:2.5vw"] {
+                font-size: 5vw !important;
+            }
+            #alejandra[style*="font-size:2.2vw"] {
+                font-size: 4.2vw !important;
+            }
+        }
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         
 
@@ -38,7 +51,7 @@
 <body>
         <div id="alejandra" style="top: 23%;">Alejandra Elizabeth</div>
         <div id="alejandra" style="top: 33%;font-size:2.5vw;">Te quiero mucho mi niña</div>
-        <div id="alejandra" style="top: 43%;font-size:2.2vw;">Fly, fly, volo ¿Oyo?</div>
+        <div id="alejandra" style="top: 43%;font-size:2.2vw;">No te iba a dejar sin flores.</div>
             <canvas id="flores"></canvas>
         <script>
                 // Cargar fuente de Google Fonts para Dancing Script
